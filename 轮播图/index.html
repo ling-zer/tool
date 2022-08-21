@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #container {
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+    <script src="./swipper.js"></script>
+</head>
+
+<body>
+    <div id="container">
+    </div>
+</body>
+<script type="text/javascript">
+    const container = document.getElementById('container');
+    const list = ['./image/0.jpg', './image/1.jpg', './image/2.jfif', './image/3.jfif', './image/4.jfif']
+    createSwipper(container, list, 2000);
+</script>
+
+</html>
